@@ -1,0 +1,89 @@
+-- Open Get Key V1 
+_G.Config = {
+    CorrectKey = "TàyHub", -- use Key Normal not key api
+    UseKeySystem = true,
+
+    KickOnWrongKey = false,
+    KickDelay = 2,
+    KickMessage = "Wrong Key! Please get the correct key.",
+
+    KeyCheckAPI = {
+        Enabled = false, -- Key Api
+        URL = "Key_ToiKhongPhaiLuaDaoCampuchia36",
+        Method = "GET"
+    },
+
+    Title = "Tày Hub Key System | v1",
+    SubTitle = "Enter your key below to continue",
+    PlaceholderText = "Enter Key Here...",
+
+    GetKeyButtonText = "Get Key",
+    CheckKeyButtonText = "Check Key",
+    DiscordButtonText = "Discord",
+    TutorialButtonText = "Tutorial",
+
+    KeyLink = "https://discord.gg/VdGcWTfU",
+    DiscordLink = "https://discord.gg/5ZHxCxHG",
+    TutorialLink = "có cái lồn",
+
+    Images = {
+        Background = "133093108462584",
+        Character = "117730372760094",
+        CharacterIcon = "104202858258775",
+        GetKeyButton = "117928961549219",
+        CheckKeyButton = "122513747232289",
+        DiscordButton = "122513747232289",
+        TutorialButton = "103629842357172"
+    },
+
+    FontSizes = {
+        Title = 22,
+        SubTitle = 13,
+        Input = 16,
+        Button = 16
+    },
+
+    Colors = {
+        MainBackground = Color3.fromRGB(25, 25, 35),
+        MainStroke = Color3.fromRGB(0, 255, 255),
+        TitleColor = Color3.fromRGB(0, 255, 255),
+        SubTitleColor = Color3.fromRGB(200, 200, 200),
+        InputBackground = Color3.fromRGB(35, 35, 45),
+        InputStroke = Color3.fromRGB(0, 255, 255),
+
+        GetKeyButton = {
+            Background = Color3.fromRGB(50, 100, 150),
+            Stroke = Color3.fromRGB(70, 140, 200),
+            StrokeHover = Color3.fromRGB(100, 180, 255)
+        },
+        CheckKeyButton = {
+            Background = Color3.fromRGB(50, 100, 150),
+            Stroke = Color3.fromRGB(70, 140, 200),
+            StrokeHover = Color3.fromRGB(100, 180, 255)
+        },
+        DiscordButton = {
+            Background = Color3.fromRGB(88, 101, 242),
+            Stroke = Color3.fromRGB(108, 121, 255),
+            StrokeHover = Color3.fromRGB(138, 151, 255)
+        },
+        TutorialButton = {
+            Background = Color3.fromRGB(150, 50, 150),
+            Stroke = Color3.fromRGB(200, 70, 200),
+            StrokeHover = Color3.fromRGB(255, 100, 255)
+        }
+    },
+
+    Notifications = {
+        KeyCopied = "Key link copied to clipboard!",
+        DiscordCopied = "Discord link copied to clipboard!",
+        TutorialCopied = "Tutorial link copied to clipboard!",
+        CorrectKey = "Access granted!",
+        IncorrectKey = "Incorrect Key! Try again.",
+        NotificationTitle = "Tày Hub"
+    }
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dex-Bear/Vxezehub/refs/heads/main/GetKeyFree.lua"))()
+
+repeat wait() until _G.KeyVerified == true
+
